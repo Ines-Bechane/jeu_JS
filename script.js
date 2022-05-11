@@ -42,6 +42,19 @@ if (age < 18 ){
 /* 3 LES BOUCLES */
 // objectif : affiche 10 fois l'alerte : je suis heureux x fois !
 // ON DEMMARE LA VARIABLE I A 0;ON S ARRETTE A 10.A CHAQUE FOIS ONINCREMENT DE 1
-for (i=0;i<6;i++){
+for (i=0;i<3;i++){
     alert ("je suis heureux !")
 }
+
+/* 4 LES FONCTIONS */
+//SEGMENTER SON CODE 
+//ON VA AVOIR DU CODE QUI VA ETRE DANS UNE FONCTION
+
+//CREATION DU CORP DE LA FONCTION
+function afficher_alert(){
+    //DEBUT DE CODE
+    alert("je suis dans la fonction VOILA CE QU IL SE PASSE !")
+}
+
+//2.1 l'appel de la fonction
+afficher_alert()
