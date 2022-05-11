@@ -20,7 +20,7 @@ document.getElementById("madiv").innerHTML="le nouveau text"
 
 */
 
-//VARIABLE NUMERIQUE
+//VARIABLE NUMERIQUE SANS GUILLEMENT
 //CREATION DE LA VARIABLE NUMERIQUE AGE CONTENANT 30        
 age=30;
 alert(age);
@@ -29,3 +29,19 @@ alert(age);
 // CREATION DE LA VARIABLE CHAINE DE CARACTERE NOM CONTENANT MELKI
 nom="melki";
 alert(nom)
+
+
+/* 2 LES CONDITIONS */
+if (age > 17){
+    alert("vous etes majeur ! ");
+}
+if (age < 18 ){
+    alert("vous etes mineur ! ")
+}
+
+/* 3 LES BOUCLES */
+// objectif : affiche 10 fois l'alerte : je suis heureux x fois !
+// ON DEMMARE LA VARIABLE I A 0;ON S ARRETTE A 10.A CHAQUE FOIS ONINCREMENT DE 1
+for (i=0;i<10;i++){
+    alert ("je suis heureux !")
+}
