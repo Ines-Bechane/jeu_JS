@@ -1,3 +1,13 @@
+console.log("Bienvenue sur la page html")
+
+function java(){
+    alert("Bonjour")
+    alert("click !")
+    
+}
+
+
+
 //1 CREER UN NOUVEAU DOSSIER 
 //2 CREEZ UNE PAGE page.html
 //3 METTRE SUR GIT
