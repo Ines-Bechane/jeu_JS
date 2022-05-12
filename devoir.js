@@ -10,7 +10,18 @@
 9 . SI ON EST > ON ECRIS DANS LA DIV CEST MOINS 
 10 . SI ON EST < ON ECRIS DANS LA DIV CEST PLUS */
 function barbie(){
-    alert("Bonjour ! ")
+    console.log("Bonjour ! ")
+
+    //var_texte=document.getElementById("name").value;
+
+   // console.log(var_texte)
+
+   // document.getElementById("madiv").innerHTML=var_texte
+
+    document.getElementById("madiv").innerHTML=document.getElementById("name").value;
+
+    document.getElementById("bouton_text").innerHTML=document.getElementById("name").value;
+
 }
 
 
