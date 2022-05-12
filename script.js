@@ -6,6 +6,7 @@ alert("vous etes bien sur notre site")
 //innertHTML="le nouveau text"; qui modifier le HTML de la div
 document.getElementById("madiv").innerHTML="le nouveau text"
 
+
 /* ALGORITHMIQUE
 
    1 VARIABLE
