@@ -9,7 +9,19 @@
 //code qui fait lequivalent de onclick="java()" en HTML en JS
 //en HTML on a onclick situe l'emplacmeent du bouton
 //documeent le code HTML l'idendifiant du composant HTML ici : bouton
+//element.addEventlistener("click",myfunction)
 //mouseover
+
+
+for(i=0; i<100;i++){
+    console.log("le nombre de ma boucle est " + i)
+}
+
+for(i=0; i<9;i++){
+    document.getElementById("text").innerHTML= document.getElementById("text").innerHTML + "<br /> le nombre de ma boucle est" + i
+}
+
+
 document.getElementById("bouton").addEventListener("click",java)
 
 document.getElementById("bouton").addEventListener("mouseover",java)
