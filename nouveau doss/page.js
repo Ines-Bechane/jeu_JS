@@ -1,11 +1,45 @@
-console.log("Bienvenue sur la page html")
+/*console.log("Bienvenue sur la page html")
 
-function java(){
+//function java(){
     alert("Bonjour")
     alert("click !")
     
-}
+}*/
 
+//code qui fait lequivalent de onclick="java()" en HTML en JS
+//en HTML on a onclick situe l'emplacmeent du bouton
+//documeent le code HTML l'idendifiant du composant HTML ici : bouton
+//mouseover
+document.getElementById("bouton").addEventListener("click",java)
+
+document.getElementById("bouton").addEventListener("mouseover",java)
+
+
+
+
+function java(){
+    /*Methode 1*/
+    var_texte=document.getElementById("name").value;
+    //document.getElementById("text").innerHTML="le texte contient : "+var_texte;
+
+   
+    console.log(var_texte)
+    console.log(typeof(var_texte))
+    var_texte_tva=var_texte*1.2
+    console.log(isNaN(var_texte))
+    if ( isNaN(var_texte)== false)
+
+    document.getElementById("text").innerHTML="le prix TTC est : " +var_texte_tva
+
+
+else{
+    document.getElementById("text").innerHTML="veuillez entré un nombre"
+}
+    
+
+    /*Methode 2*/
+    //document.getElementById("text").innerHTML=document.getElementById("name").value
+}
 
 
 //1 CREER UN NOUVEAU DOSSIER 
