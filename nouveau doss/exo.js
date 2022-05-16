@@ -1,4 +1,15 @@
+//appel de la fonction debut lors du click sur le bouton"deb""
 document.getElementById("deb").addEventListener("click",debut)
+
+//appel de la fonction debut lors du load de la page
+window.addEventListener("load",debut)
+
+document.getElementById("deb").addEventListener("click",ftest)
+
+function ftest(){
+    document.getElementById("test").value="ce que je veux"
+}
+
 function debut(){
     nom = "Bechane"
     prenom  ="Ines"
@@ -13,3 +24,4 @@ function debut(){
     console.log("le prix de larticle 2 est " + prix_article2)
     console.log("la somme des articles sera de " + prix_article3)
 }
+
