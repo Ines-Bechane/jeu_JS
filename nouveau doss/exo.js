@@ -183,6 +183,41 @@ for( const element of tab){
     console.log(element)
 }
 
+let tab1=[10,20,30,40,50]
+console.table(tab1)
+console.log(tab1[3])
+console.log(tab1[4])
+
+for(const element of tab1){
+    console.log(element)
+}
+
+console.log("-----------------------DEBUT")
+function tsomme(nb){
+    let somme=0
+    for (let i=0;i<nb;i++){
+        somme=i+somme;
+       console.log(i)
+       console.log(somme)
+    }
+    return somme
+}
+
+let compt=tsomme(15)
+console.log(compt)
+console.log("-------------------FIN")
+
+function tfactorielle(nb){
+    let mult=1
+    for (let i=1;i<nb;i++){
+        mult=i*mult;
+        console.log(i)
+        console.log(mult)
+    }
+    return mult
+}
+ let multi=tfactorielle(10)   
+
 
 
 function fmult(){
