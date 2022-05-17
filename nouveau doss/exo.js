@@ -463,5 +463,5 @@ for (let i=0; i<tab2.length; i++){
       }  
   }
   let nbmax2=sup_tab2(tab_nb2)
-  console.log("-----NBMAX : " +  nbmax2)
+  console.log("-----NBMAX2 : " +  nbmax2)
   
