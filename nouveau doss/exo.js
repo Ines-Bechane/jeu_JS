@@ -140,6 +140,51 @@ function check_pair(nb){
 c=check_pair(2)
 console.log(c)
 
+//portée des variables
+//const (constante ca empeche toute modification possible) : a utiliser en priorité 1
+// let : A utiliser mais on protege nos bloc de fonction, de if , de boucle 2
+//portée (scope) => limité a un bloc
+//var : priorité 3
+const mavariable="ce que je veux" //variable qui ne peut plus etre modifié
+//erreur : mavariable="autre chose"
+console.log(mavariable)
+
+//age a 35ans
+// avec let on ne peut pas redclarer une variable
+let age=35;
+console.log(age);
+
+function test20(){
+    let age=14
+    let var_temp="ce que je veux"
+    console.log(var_temp)
+    console.log("l'age dans la focntion est : " + age)
+}
+test20()
+console.log(age)
+
+{
+    var tr2="test" // liberte : erreurs potentiels avec les autres blocs
+    const tre2="test"
+    // tre2="je modifier"
+    let  tre="test"
+    tre="je peux le modifier"
+}
+console.log(tr2)
+
+
+
+let tab=["Ines","Bechane",30,]
+console.table(tab)
+
+console.log(tab[2])
+
+for( const element of tab){
+    console.log(element)
+}
+
+
+
 function fmult(){
     val_num=document.getElementById("mult").value
     for(i=0;i<val_num;i++){
