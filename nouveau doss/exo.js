@@ -219,7 +219,6 @@ function tfactorielle(nb){
  let multi=tfactorielle(10)   
 
 
-
 function fmult(){
     val_num=document.getElementById("mult").value
     for(i=0;i<val_num;i++){
@@ -352,5 +351,117 @@ function debut(){
 
 
 
+// 1 Creez un tableau de 5 valeurs : Creez une fonction permettant d'inverser
+// les deux premieres valeurs d'un tableau
+// 2 Afficher un tableau passé en parametre dans une fonction
+// 3 Creez un tableau de 5 valeurs : Creez une fonction permettant de 
+// trouver la valeur max du tableau
+// 4 Creez un tableau de 5 valeurs : Creez une fonction permettant de 
+// trouver la position correspondant à la valeur max du tableau
+// 5 Creez un tableau de 5 valeurs : Creez une fonction permettant de 
+// retourner le nombre de case du tableau
+// 6 Creez un tableau de 5 valeurs : Creez une fonction permettant de 
+// retourner le nombre de case du tableau
+// 7 Creez un tableau de 5 valeurs : Creez une fonction permettant de 
+// retourner le somme des cases du tableau
 
 
+let tab2=[1,2,3,4,5]
+console.table(tab2)
+
+function inv_2t(table){
+    console.log(table[0])
+    console.log(table[1])
+   save0=table[0]
+   table[0]=table[1]
+   table[1]=save0
+    return table
+
+}
+tab3=inv_2t([1,2,3,4,5])
+console.table(tab3)
+
+
+for (const element of tab2 ){
+    console.log(element)
+} 
+// M2
+for (let i=0; i<tab2.length; i++){
+  console.log(tab2[i])
+}
+
+tab2=[1,2,3,4,5]
+console.log(tab2[0])
+console.log(tab2[1])
+console.log(tab2[2])
+console.log(tab2[3])
+console.log(tab2[4])
+
+console.log("-------------------DEBUT")
+function affiche_tab(tab2){
+    for (const element of tab2){
+        console.log(element)
+    }
+}
+affiche_tab(tab2)
+console.log("-------------------FIN")
+
+for (let i=0; i<tab2.length; i++){
+    console.log(tab2[i])
+  }
+
+
+
+ 
+
+
+
+  function sup(nb1,nb2){
+    if (nb1<nb2){
+        return nb2
+    }
+    else{
+        return nb1
+    }
+  }
+  superieur=sup(35,56)
+  console.log(superieur)
+
+
+  let tab_nb=[34,23,198,45,67,78]
+  
+  function sup_tab(montab){
+    valeur=tab_nb[0] 
+       // COMPARER(IF) tout les nombres
+      // il faut PARCOURIR BOUCLER (FOR) SUR LE TABLEAU
+      for (let i=0; i<montab.length; i++){
+           // JE COMPARER AVEC LE NOMBRE LE PLUS GRAND TROUVE AVEC CELUI EN COURS
+          if (valeur <  montab[i] ){ // 34 EST COMPARE AVEC 198 IL PASSE
+              valeur=montab[i] // VALEUR = 198
+          } 
+      } 
+          return valeur
+  }
+  let nbmax=sup_tab(tab_nb)
+  console.log("-----NBMAX : " +  nbmax)
+
+
+  
+  let tab_nb2=[34,23,60,45,67,78]
+  //          0   1 2   3  4  5
+  // LA PREMIERE > 50
+  function sup_tab2(montab){
+   
+     
+      // COMPARER(IF) tout les nombres
+      // il faut PARCOURIR BOUCLER (FOR) SUR LE TABLEAU
+      for (let i=0; i<montab.length; i++){
+           // JE COMPARER AVEC LE NOMBRE LE PLUS GRAND TROUVE AVEC CELUI EN COURS
+          if ( montab[i] > 49  ){ // 34 EST COMPARE AVEC 198 IL PASSE 
+              return  montab[i] // VALEUR = 198
+          } 
+      }  
+  }
+  let nbmax2=sup_tab2(tab_nb2)
+  console.log("-----NBMAX : " +  nbmax2)
+  
