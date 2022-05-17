@@ -33,6 +33,113 @@ document.getElementById("pwd2").addEventListener("keyup",fpdw)
 
 document.getElementById("mult").addEventListener("keyup",fmult)
 
+// lorsque je vais ecrire un nombre dans le champ tva 
+document.getElementById("tva").addEventListener("keyup", ftva)
+function ftva(){
+    // val_tva=document.getElementById("tva").value1.2
+    val_tva=calcul_TTC(document.getElementById("tva").value)
+    // dans la div dtva j'écris la valeur du PRIX TTC : Valeur ecrite 1.2
+    document.getElementById("dtva").innerHTML=val_tva
+}
+
+// fonction calcul_TTC qui va renvoyé le prix * 1.2 pour renvoye le Prix TTC
+// fonction calcul_TVA qui va renvoyé le prix * 0.2 pour renvoye le Prix de la taxe
+// fonction calcul_reduc qui va renvoyé le prix * 0.9 pour renvoye le Prix reduit de 10%
+
+
+// declarer un prix à 100
+
+function calcul_TTC(param_prix){
+    // elle créé une variable prix_ttc qui contient le param_prix(100) * 1.2 et elle le renvoie (120)
+    prix_ttc= param_prix*1.2   ;
+    return prix_ttc
+}
+// la fonction calcul_ttc est appellé 
+le_prix=calcul_TTC(300)
+console.log(le_prix)
+// la fonction calcul_ttc est appellé 
+le_prix=calcul_TTC(200)
+console.log(le_prix)
+// la fonction calcul_ttc est appellé 
+le_prix=calcul_TTC(50)
+console.log(le_prix)
+// la fonction calcul_ttc est appellé 
+le_prix=calcul_TTC(500)
+console.log(le_prix) 
+
+function calcul_tva(param_prix){
+    montant_tva=param_prix*0.2
+    return montant_tva
+}
+la_tva=calcul_tva(300)
+console.log(la_tva)
+
+
+function calcul_reduc_10(param_prix){
+    reduc_10=param_prix*0.9
+    return reduc_10
+}
+reduc=calcul_reduc_10(200)
+console.log(reduc)
+
+function calcul_reduc( param_prix , param_reduc){
+    result=param_prix*param_reduc
+    return result
+}
+le_prix=calcul_reduc(300,1.50)
+console.log("300*1.50=" + le_prix)
+
+function addition( param_n1 , param_n2){
+    result=param_n1+param_n2
+    return result
+}
+resultat=addition(25,25)
+console.log("25+25="+resultat)
+
+function test2(){
+    console.log ("Bonjour")
+}
+test2()
+
+function test(){
+    return "Salut ca va?"
+}
+a=test();
+console.log(a)
+
+function check_age( age ){
+    if (age>17){
+        return true
+    }
+    else{
+        return false
+    }
+}
+a=check_age(19)
+console.log("check_age " + a)
+
+function  verif(nb){
+    if(nb>0){
+        return true
+    }
+    else{
+        return false
+    }
+}
+b=verif(-5)
+console.log(b)
+
+function check_pair(nb){
+    if(nb%2==0){
+        return true
+    }
+    else{
+        return false
+    }
+}
+c=check_pair(2)
+console.log(c)
+
 function fmult(){
     val_num=document.getElementById("mult").value
     for(i=0;i<val_num;i++){
